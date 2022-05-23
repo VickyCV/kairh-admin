@@ -1,0 +1,179 @@
+﻿@model IEnumerable<kairh_admin.Models.pedido>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idpedido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaentregado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fecharecibido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.flagRecolecta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.flagprop)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.hora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.horaentregado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.horarecibido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idcliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idnegocio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idrepartidor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.latentrega)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.lonentrega)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.metodopago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.montoEnvio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombreNegocio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombrerepartidor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.propina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.subtotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tarifa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telrepartidor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.urlnegocio)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idpedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaentregado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecharecibido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.flagRecolecta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.flagprop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hora)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.horaentregado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.horarecibido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idcliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idnegocio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idrepartidor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.latentrega)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lonentrega)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.metodopago)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.montoEnvio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombreNegocio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombrerepartidor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.propina)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tarifa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telrepartidor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.urlnegocio)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

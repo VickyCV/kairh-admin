@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>kairh_admin</RootNamespace>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20220517003602_InitialCreate.cs" />
+    <Compile Remove="Migrations\20220517003602_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20220517004325_kairhAdmin.cs" />
+    <Compile Remove="Migrations\20220517004325_kairhAdmin.Designer.cs" />
+    <Compile Remove="Migrations\20220517004520_negocios.cs" />
+    <Compile Remove="Migrations\20220517004520_negocios.Designer.cs" />
+    <Compile Remove="Migrations\20220517180617_Clases-Completas.cs" />
+    <Compile Remove="Migrations\20220517180617_Clases-Completas.Designer.cs" />
+    <Compile Remove="Migrations\20220517180744_Clases-Completas-1.cs" />
+    <Compile Remove="Migrations\20220517180744_Clases-Completas-1.Designer.cs" />
+    <Compile Remove="Migrations\20220517181135_Clases-Completas-2.cs" />
+    <Compile Remove="Migrations\20220517181135_Clases-Completas-2.Designer.cs" />
+    <Compile Remove="Migrations\20220517181454_Clases-Completas-3.cs" />
+    <Compile Remove="Migrations\20220517181454_Clases-Completas-3.Designer.cs" />
+    <Compile Remove="Migrations\20220517181643_Clases-Completas-4.cs" />
+    <Compile Remove="Migrations\20220517181643_Clases-Completas-4.Designer.cs" />
+    <Compile Remove="Migrations\20220517181824_Clases-Completas-5.cs" />
+    <Compile Remove="Migrations\20220517181824_Clases-Completas-5.Designer.cs" />
+    <Compile Remove="Migrations\20220517181906_Inicial.cs" />
+    <Compile Remove="Migrations\20220517181906_Inicial.Designer.cs" />
+    <Compile Remove="Models\firebaseNegocio.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FireSharp" Version="2.0.4" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
+</Project>

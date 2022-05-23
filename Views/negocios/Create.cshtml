@@ -1,0 +1,248 @@
+﻿@model kairh_admin.Models.negocio
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>negocio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="idnegocio" class="control-label"></label>
+                <input asp-for="idnegocio" class="form-control" />
+                <span asp-validation-for="idnegocio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estatus" class="control-label"></label>
+                <input asp-for="Estatus" class="form-control" />
+                <span asp-validation-for="Estatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="calificacion" class="control-label"></label>
+                <input asp-for="calificacion" class="form-control" />
+                <span asp-validation-for="calificacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="calle" class="control-label"></label>
+                <input asp-for="calle" class="form-control" />
+                <span asp-validation-for="calle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ciudad" class="control-label"></label>
+                <input asp-for="ciudad" class="form-control" />
+                <span asp-validation-for="ciudad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="colonia" class="control-label"></label>
+                <input asp-for="colonia" class="form-control" />
+                <span asp-validation-for="colonia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cp" class="control-label"></label>
+                <input asp-for="cp" class="form-control" />
+                <span asp-validation-for="cp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="descripcion" class="control-label"></label>
+                <input asp-for="descripcion" class="form-control" />
+                <span asp-validation-for="descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="domingoFin" class="control-label"></label>
+                <input asp-for="domingoFin" class="form-control" />
+                <span asp-validation-for="domingoFin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="domingoInicio" class="control-label"></label>
+                <input asp-for="domingoInicio" class="form-control" />
+                <span asp-validation-for="domingoInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="domingock" class="control-label"></label>
+                <input asp-for="domingock" class="form-control" />
+                <span asp-validation-for="domingock" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="especialidad" class="control-label"></label>
+                <input asp-for="especialidad" class="form-control" />
+                <span asp-validation-for="especialidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="estado" class="control-label"></label>
+                <input asp-for="estado" class="form-control" />
+                <span asp-validation-for="estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="estrellas" class="control-label"></label>
+                <input asp-for="estrellas" class="form-control" />
+                <span asp-validation-for="estrellas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="juevesFin" class="control-label"></label>
+                <input asp-for="juevesFin" class="form-control" />
+                <span asp-validation-for="juevesFin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="juevesInicio" class="control-label"></label>
+                <input asp-for="juevesInicio" class="form-control" />
+                <span asp-validation-for="juevesInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="latitud" class="control-label"></label>
+                <input asp-for="latitud" class="form-control" />
+                <span asp-validation-for="latitud" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="longitud" class="control-label"></label>
+                <input asp-for="longitud" class="form-control" />
+                <span asp-validation-for="longitud" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="lunesFin" class="control-label"></label>
+                <input asp-for="lunesFin" class="form-control" />
+                <span asp-validation-for="lunesFin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="lunesInicio" class="control-label"></label>
+                <input asp-for="lunesInicio" class="form-control" />
+                <span asp-validation-for="lunesInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="lunesck" class="control-label"></label>
+                <input asp-for="lunesck" class="form-control" />
+                <span asp-validation-for="lunesck" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="martesFin" class="control-label"></label>
+                <input asp-for="martesFin" class="form-control" />
+                <span asp-validation-for="martesFin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="martesInicio" class="control-label"></label>
+                <input asp-for="martesInicio" class="form-control" />
+                <span asp-validation-for="martesInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="martesck" class="control-label"></label>
+                <input asp-for="martesck" class="form-control" />
+                <span asp-validation-for="martesck" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="miercolesFin" class="control-label"></label>
+                <input asp-for="miercolesFin" class="form-control" />
+                <span asp-validation-for="miercolesFin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="miercolesInicio" class="control-label"></label>
+                <input asp-for="miercolesInicio" class="form-control" />
+                <span asp-validation-for="miercolesInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="miercolesck" class="control-label"></label>
+                <input asp-for="miercolesck" class="form-control" />
+                <span asp-validation-for="miercolesck" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="municipio" class="control-label"></label>
+                <input asp-for="municipio" class="form-control" />
+                <span asp-validation-for="municipio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nombreComercial" class="control-label"></label>
+                <input asp-for="nombreComercial" class="form-control" />
+                <span asp-validation-for="nombreComercial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="numext" class="control-label"></label>
+                <input asp-for="numext" class="form-control" />
+                <span asp-validation-for="numext" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="numint" class="control-label"></label>
+                <input asp-for="numint" class="form-control" />
+                <span asp-validation-for="numint" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="profileImage" class="control-label"></label>
+                <input asp-for="profileImage" class="form-control" />
+                <span asp-validation-for="profileImage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="razonSocial" class="control-label"></label>
+                <input asp-for="razonSocial" class="form-control" />
+                <span asp-validation-for="razonSocial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rfc" class="control-label"></label>
+                <input asp-for="rfc" class="form-control" />
+                <span asp-validation-for="rfc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="sabadoFin" class="control-label"></label>
+                <input asp-for="sabadoFin" class="form-control" />
+                <span asp-validation-for="sabadoFin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="sabadoInicio" class="control-label"></label>
+                <input asp-for="sabadoInicio" class="form-control" />
+                <span asp-validation-for="sabadoInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="sabadock" class="control-label"></label>
+                <input asp-for="sabadock" class="form-control" />
+                <span asp-validation-for="sabadock" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="telefono" class="control-label"></label>
+                <input asp-for="telefono" class="form-control" />
+                <span asp-validation-for="telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tipo" class="control-label"></label>
+                <input asp-for="tipo" class="form-control" />
+                <span asp-validation-for="tipo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="viajes" class="control-label"></label>
+                <input asp-for="viajes" class="form-control" />
+                <span asp-validation-for="viajes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="viernesFin" class="control-label"></label>
+                <input asp-for="viernesFin" class="form-control" />
+                <span asp-validation-for="viernesFin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="viernesInicio" class="control-label"></label>
+                <input asp-for="viernesInicio" class="form-control" />
+                <span asp-validation-for="viernesInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="viernesck" class="control-label"></label>
+                <input asp-for="viernesck" class="form-control" />
+                <span asp-validation-for="viernesck" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,89 @@
+﻿@model IEnumerable<kairh_admin.Models.repartidor>
+
+@{
+    ViewData["Title"] = "Repartidores";
+}
+
+
+<br />
+<div class="container">
+    <div class="form-inline">
+        <div class="form-group">
+            @*<img src="~/img/repartidor_cat.png" width="55" class="img-fluid" style="margin-right:20px" />*@
+            <h6 class="display-4">Catálogo de Repartidores</h6>
+        </div>
+    </div>
+</div>
+
+<br />
+@*buscador*@
+<form class="form-inline" asp-controller="repartidores" asp-action="Index" style="margin-left:25px">
+    <label class="col-form-label" for="exampleFormControlSelect1">Buscar por: </label>
+    <div class="col-auto">
+
+        <select class="form-control" name="campo">
+            <option>Nombre</option>
+            <option>Telefono</option>
+            <option>Estatus</option>
+        </select>
+        <input name="SearchString" class="form-control mr-sm-2" type="search" aria-label="Search">
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><img src="~/img/buscar.png" align="middle" width="19" height="19" /></button>
+            <a class="btn btn-outline-secondary my-2 my-sm-0" asp-area="" asp-controller="repartidores" asp-action="Index"><img src="~/img/refresh.png" style="align-content:center" width="19" height="19" /></a>
+        </div>
+
+    </div>
+</form>
+
+<br />
+<br />
+<table class="table table-striped">
+    <thead class="table thead-light">
+        <tr>
+            <th style="text-align:center">
+                FOTO
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.estatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.correo)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.telefono)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayName("ACCIONES")
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="text-align:center">
+                    <img src="~/img/repartidor.png"class="img-fluid img-thumbnail" width="45" alt="">
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.estatus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.correo)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.telefono)
+                </td>
+                <td style="text-align:center">
+                    @Html.ActionLink("Editar", "Edit", new { id = item.id }, new { @class = "btn btn-secondary", data_modal = "" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

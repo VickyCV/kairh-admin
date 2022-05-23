@@ -1,0 +1,107 @@
+﻿@model IEnumerable<kairh_admin.Models.pedido_detalle>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idpedido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.iddetalle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cantidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.complementos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.costosAdicionales)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.flagcomplementos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.flagoptions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folioPedido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombreProd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.observacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.option)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.precioUnit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.urlProd)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idpedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.iddetalle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cantidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.complementos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.costosAdicionales)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.flagcomplementos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.flagoptions)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folioPedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombreProd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.observacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.option)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.precioUnit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.urlProd)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
